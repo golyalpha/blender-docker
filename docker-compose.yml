@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  blender-master:
+    build: ./master
+    image: blender:master
+    ports:
+      - "8000"
+  blender-slave:
+    build: ./slave
+    image: blender:slave
+    depends_on:
+      - blender-master
