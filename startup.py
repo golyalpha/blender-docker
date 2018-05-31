@@ -20,14 +20,6 @@ if deviceType != 'NONE':
 device = os.getenv('RENDER_DEVICE', 'CPU')
 bpy.context.scene.cycles.device = device
 
-
-# lower values for CPU, higher values for GPU
-#tileX = os.getenv('RENDER_TILE_SIZE_X', 16)
-#tileY = os.getenv('RENDER_TILE_SIZE_Y', 16)
-#bpy.context.scene.render.tile_x = int(tileX)
-#bpy.context.scene.render.tile_y = int(tileY)
-# Commented out because of the usage of auto_tile_size
-
 masterIp = os.getenv('MASTER_PORT_8000_TCP_ADDR', False)
 if masterIp == False:
     masterIp = os.getenv('MASTER_IP', '127.0.0.1')
