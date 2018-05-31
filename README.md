@@ -10,4 +10,4 @@
  Sets the render device type for GPU renders. (Requires RENDER_DEVICE=GPU)
  - MASTER_IP - IP/Hostname of the master node for netrender
 
-[Docker Hub](https://github.com/golyalpha/blender-docker)
+[Docker Hub](https://hub.docker.com/r/golyalpha/blender)
