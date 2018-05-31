@@ -1,6 +1,6 @@
-# Dockerized Blender - For NET_RENDER
+# Dockerized Blender for netrender
 
-## Environment
+## Environment setup
 
  - RENDER_MODE - MASTER or SLAVE(default)
  Sets the node's mode in netrender
