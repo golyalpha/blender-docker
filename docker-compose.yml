@@ -10,6 +10,7 @@ services:
       - "8000"
     ports:
       - "80:8000"
+    restart: always
 
   slave:
     build: .
@@ -19,3 +20,4 @@ services:
       - RENDER_MODE=SLAVE
     links:
       - master
+    restart: always
