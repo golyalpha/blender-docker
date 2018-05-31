@@ -9,3 +9,5 @@
  - RENDER_DEVICE_TYPE - NONE(default), CUDA, OPENCL
  Sets the render device type for GPU renders. (Requires RENDER_DEVICE=GPU)
  - MASTER_IP - IP/Hostname of the master node for netrender
+
+[Docker Hub](https://github.com/golyalpha/blender-docker)
