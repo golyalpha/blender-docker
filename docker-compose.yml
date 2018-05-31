@@ -1,13 +1,21 @@
-version: "3"
+version: "3.3"
 
 services:
-  blender-master:
-    build: ./master
-    image: blender:master
-    ports:
+  master:
+    build: .
+    image: blender
+    environment:
+      - RENDER_MODE=MASTER
+    expose:
       - "8000"
-  blender-slave:
-    build: ./slave
-    image: blender:slave
-    depends_on:
-      - blender-master
+    ports:
+      - "80:8000"
+
+  slave:
+    build: .
+    image: blender
+    environment:
+      - MASTER_IP=master
+      - RENDER_MODE=SLAVE
+    links:
+      - master
